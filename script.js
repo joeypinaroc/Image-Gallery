@@ -5,7 +5,8 @@ var rightButton = document.getElementById("right");
 
 var imagesNumber = 3;
 var imageCounter = 1;
-imageBox.setAttribute("src", `/img${imageCounter}.png`);
+//https://github.com/joeypinaroc/Image-Gallery/blob/main/img1.png
+imageBox.setAttribute("src", `img${imageCounter}.png`);
 leftButton.addEventListener("click", ()=>{
     if(imageCounter == 1)
     {
@@ -15,7 +16,7 @@ leftButton.addEventListener("click", ()=>{
     {
         imageCounter -= 1;
     }
-    imageBox.setAttribute("src", `/img${imageCounter}.png`);
+    imageBox.setAttribute("src", `img${imageCounter}.png`);
 })
 
 rightButton.addEventListener("click", ()=>{
@@ -27,5 +28,5 @@ rightButton.addEventListener("click", ()=>{
     {
         imageCounter += 1;
     }
-    imageBox.setAttribute("src", `/img${imageCounter}.png`);
+    imageBox.setAttribute("src", `img${imageCounter}.png`);
 })
